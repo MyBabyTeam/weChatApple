@@ -1,0 +1,9 @@
+.userAvatar{
+  width: 130rpx;
+  height:130rpx;
+  border-radius:50%;
+  display: flex;
+  overflow:hidden;
+  text-align: center;
+  color: yellow
+}

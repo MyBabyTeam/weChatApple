@@ -1,0 +1,65 @@
+.login{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login_top{
+  width: 75%;
+  flex: 2;
+  margin: 0 auto;
+}
+.login_title{
+  padding: 40px 0;
+  font-size: 20px;
+}
+.login_input{
+  display: flex;
+  flex-direction: column;
+}
+.phone_input,.password_input{
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+  border-bottom: 1px solid rgba(77, 75, 78, 0.377)
+}
+.password_input{
+  margin-top: 10px;
+  justify-content: space-between
+}
+.password_input image{
+  width: 32px;
+  height: 32px;
+}
+.text_select{
+  margin-right: 10px;
+  font-size: 14px;
+}
+.password_change{
+  color: rgb(243, 199, 54)
+}
+.text_tip{
+  font-size: 12px;
+  margin-top: 15px;
+}
+.vertify_input{
+  margin: 20px 0;
+}
+.img_regest{
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
+}
+.img_icon{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+.img_icon image{
+  margin: 0 auto;
+  width:32px;
+  height: 32px;
+}
+.protol{
+  font-size: 12px;
+}

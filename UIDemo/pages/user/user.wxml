@@ -1,0 +1,6 @@
+<view>
+  <view>
+    <open-data type="userAvatarUrl" class="userAvatar" default-avatar="http://k2.jsqq.net/uploads/allimg/1707/7_170710154725_3.jpg"></open-data>
+    <text>{{userName}}</text>
+  </view>
+</view>

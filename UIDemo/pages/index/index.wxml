@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class="container">
+  <view style="width:360px">
+    <swiper indicator-dots="true" autoplay="true" interval="2000" duration="1000" circular="true" width="360px" height="150px">
+      <block wx:for="{{background}}" wx:key="*this" wx:if="{{background.length>0}}">
+        <swiper-item>
+          <image src="{{item}}" style="width:360px"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="index_notice">
+    <text>公告：欢迎来我们公司了解更多产品，本店只为演示使用，不做真实运营</text>
+  </view>
+  <view class="index_icon">
+    <view class="icon_item">
+      <image src="/imgs/Img_recommend.png"></image>
+      <text>店长推荐</text>
+    </view>
+    <view class="icon_item">
+      <image src="/imgs/Img_vip.png"></image>
+      <text>会员中心</text>
+    </view>
+    <view class="icon_item">
+      <image src="/imgs/Img_ticket.png"></image>
+      <text>领券中心</text>
+    </view>
+    <view class="icon_item">
+      <image src="/imgs/Img_store.png"></image>
+      <text>店铺介绍</text>
+    </view>
+  </view>
+  <view class="index_input">
+    <view class="input_block">
+      <icon type="search" size="20"></icon>
+      <input placeholder="输入关键词查找商品" value="{{searchValue}}"></input>
+      <icon wx:if="{{searchValue!==null}}" type="clear"></icon>
+    </view>
+    <text>搜索</text>
+  </view>
+  <view class="index_block">
+    <view class="block_left">
+      <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579012649123&di=d7a1d25dfb93fcf3fc530bfe16ff7f2c&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1402%2F22%2Fc0%2F31456707_1393033045621_800x600.jpg"></image>
+      <text>餐饮美食</text>
+    </view>
+    <view class="block_right">
+      <view class="block_little">
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579012922809&di=07e5670ade60e1471afffd81c534a661&imgtype=0&src=http%3A%2F%2Fpic106.nipic.com%2Ffile%2F20160805%2F20860925_115732017000_2.jpg"></image>
+        <view class="block_text">
+          <text>长寿美食</text>
+          <text class="text_small">5分钟送达</text>
+        </view>
+      </view>
+      <view class="block_little">
+        <view class="block_text">
+          <text>深夜美食</text>
+          <text class="text_small">在你身边的爱</text>
+        </view>
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1579012955446&di=95e327fb7da680518796c27e1d51663c&imgtype=0&src=http%3A%2F%2Fnews.d5cs.com%2Fuploads%2Fallimg%2F2016%2F0331%2Feq1vbrhv24p.jpg"></image>
+      </view>
+    </view>
+  </view>
+  <view class="index_list">
+    <text class="index_business">附近商家</text>
+    <view class="index_kind">
+      <text>综合排序</text>
+      <text>品类</text>
+      <text>速度</text>
+      <text>全部筛选</text>
+    </view>
+    <view class="business">
+      <view class="business_img">
+        <image src="http://img4.imgtn.bdimg.com/it/u=1128646459,1050596937&fm=26&gp=0.jpg" ></image>
+      </view>
+      <view class="business_info">
+        <text class="business_name">面面俱到</text>
+        <view class="business_rate">
+          <view class="rate">
+            <image src="/imgs/Icon_rate.png"></image>
+            <text>4.4</text>
+          </view>
+          <text>月售1023单</text>
+        </view>
+        <view class="business_money">
+          <text class="money">起送 ￥19.9</text>
+          <text>免费配送</text>
+        </view>
+        <view class="business_discount">
+          <text>99减5</text>
+          <text>199减10</text>
+          <text>4.76折起</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

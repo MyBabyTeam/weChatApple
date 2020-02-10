@@ -1,0 +1,37 @@
+<view class="login">
+  <view class="login_top">
+    <view class="login_title">
+      <text>欢迎登录</text>
+    </view>
+    <view class="login_input">
+      <view class="phone">
+        <view class="phone_input">
+          <text class="text_select">+86</text>
+          <input placeholder="请输入手机号" bindinput="nameInput"></input>
+        </view>
+        <text class="text_tip" wx:if="{{!changePwd}}">未注册的手机号验证后自动创建账户</text>
+        <view class="password_input" wx:if="{{changePwd}}">
+          <input placeholder="请输入密码" password="true" bindinput="pwdInput"></input>
+          <image src="/imgs/Icon_visiable.png"></image>
+        </view>
+      </view>
+      <view class="vertify_input">
+        <button type="primary"  wx:if="{{!changePwd}}">获取短信验证码</button>
+        <button type="primary"  wx:if="{{changePwd}}" bindtap="login">登录</button>
+      </view>
+      <text class="password_change" bindtap="changeInput" wx:if="{{!changePwd}}">密码登录</text>
+      <text class="password_change" bindtap="changeInput" wx:if="{{changePwd}}">验证码登录</text>
+    </view>
+  </view>
+  <view class="img_regest">
+    <view class="img_icon">
+      <image src="/imgs/Icon_qq.png"></image>
+      <image src="/imgs/Icon_weixin.png"></image>
+    </view>
+    <view class="protol">
+      <text>
+       登录代表同意用户协议以及隐私政策
+      </text>
+    </view>
+  </view>
+</view>
