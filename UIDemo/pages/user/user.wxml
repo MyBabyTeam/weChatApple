@@ -1,6 +1,37 @@
-<view>
-  <view>
+<!--index.wxml-->
+<view class="container">
+  <view class="userTop">
     <open-data type="userAvatarUrl" class="userAvatar" default-avatar="http://k2.jsqq.net/uploads/allimg/1707/7_170710154725_3.jpg"></open-data>
-    <text>{{userName}}</text>
+    <text class="user_name">{{userName}}</text>
+  </view>
+  <view class="vip_banner">
+    <text class="vip_title">成为超级会员，领无门槛红包</text>
+    <text class="vip_content">下单再返奖励金，每月约省1032元</text>
+  </view>
+  <view class="list">
+    <view class="list_item">
+      <text>我的红包</text>
+      <image src="/imgs/Icon_ending.png"></image>
+    </view>
+    <view class="list_item">
+      <text>我的津贴</text>
+      <image src="/imgs/Icon_ending.png"></image>
+    </view>
+    <view class="list_item">
+      <text>我的地址</text>
+      <image src="/imgs/Icon_ending.png"></image>
+    </view>
+    <view class="list_item">
+      <text>我的收藏</text>
+      <image src="/imgs/Icon_ending.png"></image>
+    </view>
+    <view class="list_item">
+      <text>我的客服</text>
+      <image src="/imgs/Icon_ending.png"></image>
+    </view>
+    <view class="list_item">
+      <text>规则中心</text>
+      <image src="/imgs/Icon_ending.png"></image>
+    </view>
   </view>
 </view>
